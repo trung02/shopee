@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');</style>
+    <title>Shopee</title>
+    <link rel='shortcut icon' href='./asset/image/shopee.png'/>
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/responsive.css">
+</head>
+<body>
+    <div class="app">
+        <div class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-list-item header__navbar-list-item--separate"><a href="">Kênh Người bán</a></li>
+                        <li class="header__navbar-list-item header__navbar-list-item--separate"><a href="">Trở thành Người bán Shopee</a></li>
+                        <li class="header__navbar-list-item header__navbar-list-item--separate list-item-qrcode">
+                            <a href="">Tải ứng dụng</a>
+                            <div class="item-qrcode">
+                                <img class="item-qrcode-img" src="./asset/image/QRcode.png" alt="">
+                                <div class="item-qrcode-down">
+                                    <a href=""><img src="./asset/image/appstore.png" alt=""></a>
+                                    <a href=""><img src="./asset/image/chplay.png" alt=""></a>
+                                    <a href=""><img src="./asset/image/appge.png" alt=""></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-list-item"><p>Kết nối</p></li>
+                        <li class="header__navbar-list-item"><a href=""><i class="fab fa-facebook"></i></a></li>
+                        <li class="header__navbar-list-item"><a href=""><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-list-item">
+                            <div class="item-box">
+                                <a href=""><i class="far fa-bell"></i></a>
+                                <a href="">Thông báo</a>
+                                <div class="item-box-triangle"></div>
+                                <div class="item-box-notificate">
+                                    <img class="item-box-notification-img" src="./asset/image/noti.png" alt="">
+                                    <p class="item-box-notification-text">Đăng nhập để xem Thông báo</p>
+                                    <div class="item-box-notificate-sign">
+                                        <div class="notification-sign-box "><a href="">Đăng kí</a> </div>
+                                        <div class="notification-sign-box "><a href="">Đăng nhập</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-list-item">
+                            <div class="item-box">
+                                <a href=""><i class="far fa-question-circle"></i></a>
+                                <a href="">Hỗ trợ</a>
+                            </div>
+                        </li>
+                        <li class="header__navbar-list-item header__navbar-list-item--separate js-register"><a href="#">Đăng kí</a></li>
+                        <li class="header__navbar-list-item js-login"><a href="#">Đăng nhập</a></li>
+                    </ul>
+                </nav>
+            
+            </div>
+            <div class="grid">
+                <nav class="header__search grid__row">
+                    <div class="header__search-logo">
+                        <img class="header__search-logo-img" src="./asset/image/logo1.jpg" alt="">
+                    </div>
+                    <div class="header__search-input">
+                        <div class="header__search-input__box">
+                            <input class="header__search-input__box-1" type="text" placeholder="Hoàn tiền đến 50K xu tại đây">
+                            <button class="header__search-input__box-2 hoveropacity"><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="header__search-input__text">
+                            <a class="header__search-input__text-sugess hoveropacity" href="">Balo</a>
+                            <a class="header__search-input__text-sugess hoveropacity" href="">Váy</a>
+                            <a class="header__search-input__text-sugess hoveropacity" href="">Áo khoác</a>
+                            <a class="header__search-input__text-sugess hoveropacity" href="">Quần</a>
+                            <a class="header__search-input__text-sugess hoveropacity" href="">Áo phông</a>
+                            <a class="header__search-input__text-sugess hoveropacity" href="">Bông tẩy trang</a>
+                            <a class="header__search-input__text-sugess hoveropacity" href="">Áo Croptop</a>
+                        </div>
+                    </div>
+                    <div class="header__search-shop ">
+                        <div class="header__search-shop-box">
+                            <i class="fas fa-shopping-cart"></i>
+                            <div class="header__search-shop-box-hovernoti">
+                                <img class="header__search-shop-box-hovernoti-img" src="./asset/image/shop.png" alt="">
+                                <div class="header__search-shop-box-hovernoti-text">Chưa có sản phẩm</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="main">
+            <div class="grid">
+                <div class="main-adsbox">
+                    <div class="main-adsbox__img">
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+                        <input type="radio" name="radio-btn" id="radio5">
+                        <div class="marual">
+                            <label for="radio1" class="marual-btn"></label>
+                            <label for="radio2" class="marual-btn"></label>
+                            <label for="radio3" class="marual-btn"></label>
+                            <label for="radio4" class="marual-btn"></label>
+                            <label for="radio5" class="marual-btn"></label>
+                        </div>
+                        <div class="main-adsbox__img-slider">
+                            <img class="main-adsbox__img-list" src="./asset/image/main-ads__img2.png" alt="">
+                            <img class="main-adsbox__img-list" src="./asset/image/main-ads__img1.png" alt="">
+                            <img class="main-adsbox__img-list" src="./asset/image/main-ads__img3.png" alt="">
+                            <img class="main-adsbox__img-list" src="./asset/image/main-ads__img4.png" alt="">
+                            <img class="main-adsbox__img-list" src="./asset/image/main-ads__img5.png" alt="">
+                        </div>
+                    </div>
+                    <div class="main-adsbox__xu">
+                        <div class="main-adsbox__xu-box b1"><a href=""><img class="main-adsbox__xu-box-img" src="./asset/image/main-ads-xu.png" alt=""></a></div>
+                        <div class="main-adsbox__xu-box b2"><a href=""><img class="main-adsbox__xu-box-img" src="./asset/image/main-ads-xu2.png" alt=""></a></div>
+                    </div>
+                </div>
+                <div class="main-icon">
+                    <a href="" class="main-icon-link">
+                        <div class="main-icon-link-box">
+                            <div class="main-icon-link__img"><img src="./asset/image/icon1.png" alt=""></div>
+                            <div class="main-icon-link__text">Tech Zone - Siêu Thị Điện Tử</div>
+                        </div>
+                    </a>
+                    <a href="" class="main-icon-link">
+                    <div class="main-icon-link-box">
+                        <div class="main-icon-link__img"><img src="./asset/image/icon2.png" alt=""></div>
+                        <div class="main-icon-link__text">Gì Cũng Rẻ Từ 1K</div>
+                    </div>
+                    
+                    </a>
+                    <a href="" class="main-icon-link">
+                    <div class="main-icon-link-box">
+                        <div class="main-icon-link__img"><img src="./asset/image/icon3.png" alt=""></div>
+                        <div class="main-icon-link__text">Hoàn Xu 20% - Đơn Từ 0Đ</div>
+                    </div>
+                    
+                    </a>
+                    <a href="" class="main-icon-link">
+                    <div class="main-icon-link-box">
+                        <div class="main-icon-link__img"><img src="./asset/image/icon4.gif" alt=""></div>
+                        <div class="main-icon-link__text">Nạp Thẻ Hóa Đơn& E-...</div>
+                    </div>
+                    
+                    </a>
+                    <a href="" class="main-icon-link">
+                    <div class="main-icon-link-box">
+                        <div class="main-icon-link__img"><img src="./asset/image/icon5.gif" alt=""></div>
+                        <div class="main-icon-link__text">Shopee Số Gì Đây</div>
+                    </div>
+                    
+                    </a>
+                    <a href="" class="main-icon-link">
+                    <div class="main-icon-link-box">
+                        <div class="main-icon-link__img"><img src="./asset/image/icon6.png" alt=""></div>
+                        <div class="main-icon-link__text">Freeship Xtra 70k Mỗi Ngày</div>
+                    </div>
+                    
+                    </a>
+                    <a href="" class="main-icon-link">
+                    <div class="main-icon-link-box">
+                        <div class="main-icon-link__img"><img src="./asset/image/icon7.png" alt=""></div>
+                        <div class="main-icon-link__text">Hàng Hiệu -50%</div>
+                    </div>
+                    
+                    </a>
+                    <a href="" class="main-icon-link">
+                    <div class="main-icon-link-box">
+                        <div class="main-icon-link__img"><img src="./asset/image/icon8.png" alt=""></div>
+                        <div class="main-icon-link__text">Hàng Quốc Tế - Deal Đồng Giá</div>
+                    </div>
+                    
+                    </a>
+                    <a href="" class="main-icon-link">
+                    <div class="main-icon-link-box">
+                        <div class="main-icon-link__img"><img src="./asset/image/icon9.png" alt=""></div>
+                        <div class="main-icon-link__text">Shopee Premium</div>
+                    </div>
+                    
+                    </a>
+                    <a href="" class="main-icon-link">
+                    <div class="main-icon-link-box">
+                        <div class="main-icon-link__img"><img src="./asset/image/icon10.png" alt=""></div>
+                        <div class="main-icon-link__text">Yên Tâm Mua Hàng</div>
+                    </div>
+                    
+                    </a>
+                </div>
+                <div class="main-banner"></div>
+                <div class="main-national">
+                    <img class="main-national-img" src="./asset/image/national.jfif" alt="">
+                    <div class="main-national-box">
+                        <div class="main-national-box-product">
+                            <div class="main-national-box-product-title">
+                                <p>SẢN PHẨM BÁN CHẠY</p>
+                                <a href="">Xem thêm ></a>
+                            </div>
+                            <div class="main-national-box-product-body">
+                                <div class="main-national-box-product-body-bsp">
+                                    <div class="main-national-box-product-body-bsp__km">
+                                        <p>45%</p>
+                                        <p>GIẢM</p>
+                                    </div>
+                                    <img class="main-national-box-product-body-bsp__img" src="./asset/image/nation-product1.png" alt="">
+                                    <div class="main-national-box-product-body-bsp__price">₫3.000</div>
+                                </div>
+                                <div class="main-national-box-product-body-bsp">
+                                    <div class="main-national-box-product-body-bsp__km">
+                                        <p>45%</p>
+                                        <p>GIẢM</p>
+                                    </div>
+                                    <img class="main-national-box-product-body-bsp__img" src="./asset/image/nation-product2.png" alt="">
+                                    <div class="main-national-box-product-body-bsp__price">₫3.000</div>
+                                </div>
+                                <div class="main-national-box-product-body-bsp">
+                                    <div class="main-national-box-product-body-bsp__km">
+                                        <p>45%</p>
+                                        <p>GIẢM</p>
+                                    </div>
+                                    <img class="main-national-box-product-body-bsp__img" src="./asset/image/nation-product3.png" alt="">
+                                    <div class="main-national-box-product-body-bsp__price">₫3.000</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-national-box-product">
+                            <div class="main-national-box-product-title">
+                                <p>THƯƠNG HIỆU NỔI BẬT</p>
+                                <a href="">Xem thêm ></a>
+                            </div>
+                            <div class="main-national-box-product-body">
+                                <div class="main-national-box-product-body-bsp">
+                                   
+                                    <img class="main-national-box-product-body-bsp__img" src="./asset/image/nation-product4.png" alt="">
+                                    <div class="main-national-box-product-body-bsp__box"><img src="./asset/image/nation-th1.jfif" alt=""></div>
+                                    <div class="main-national-box-product-body-bsp__price">FOCALLURE ƯU...</div>
+                                </div>
+                                <div class="main-national-box-product-body-bsp">
+                                   
+                                    <img class="main-national-box-product-body-bsp__img" src="./asset/image/nation-product5.png" alt="">
+                                    <div class="main-national-box-product-body-bsp__box"><img src="./asset/image/nation-th2.jfif" alt=""></div>
+                                    <div class="main-national-box-product-body-bsp__price">YRSHOP ƯU ĐÃI...</div>
+                                </div>
+                                <div class="main-national-box-product-body-bsp">
+                                   
+                                    <img class="main-national-box-product-body-bsp__img" src="./asset/image/nation-product6.png" alt="">
+                                    <div class="main-national-box-product-body-bsp__box"><img src="./asset/image/nation-th3.jfif" alt=""></div>
+                                    <div class="main-national-box-product-body-bsp__price">LZ999.VN ƯU ĐÃ...</div>
+                                </div>
+                            </div>
+                            <div class="main-national-box-product-body"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="main-category">
+                    <input type="radio" name="page" id="next">
+                    <input type="radio" name="page" id="back">
+                    <label for="next" class="nextbtn hoverscale">></label>
+                    <label for="back" class="backbtn hoverscale"><</label>
+                    <div class="main-category-title">DANH MỤC</div>
+                    <div class="main-category-box">
+                        <div class="main-category-box-itembox">
+                            <div class="main-category-box-itembox-itemimg" style="background-image: url(./asset/image/category1.png);"></div>
+                            <div class="main-category-box-itembox-itemtext">Thời Trang Nam</div>    
+                        </div>
+                        <div class="main-category-box-itembox">
+                            <div class="main-category-box-itembox-itemimg" style="background-image: url(./asset/image/category2.png);"></div>
+                            <div class="main-category-box-itembox-itemtext">Điện Thoại & Phụ Kiện</div>    
+                        </div>
+                        <div class="main-category-box-itembox">
+                            <div class="main-category-box-itembox-itemimg" style="background-image: url(./asset/image/category3.png);"></div>
+                            <div class="main-category-box-itembox-itemtext">Thiết Bị Điện Tử</div>    
+                        </div>
+                        <div class="main-category-box-itembox">
+                            <div class="main-category-box-itembox-itemimg" style="background-image: url(./asset/image/category4.png);"></div>
+                            <div class="main-category-box-itembox-itemtext">Máy Tính & Laptop</div>    
+                        </div>
+                        <div class="main-category-box-itembox">
+                            <div class="main-category-box-itembox-itemimg" style="background-image: url(./asset/image/category5.png);"></div>
+                            <div class="main-category-box-itembox-itemtext">Máy Ảnh & Máy Quay Phim</div>    
+                        </div>
+                        <div class="main-category-box-itembox">
+                            <div class="main-category-box-itembox-itemimg" style="background-image: url(./asset/image/category6.png);"></div>
+                            <div class="main-category-box-itembox-itemtext">Đồng Hồ</div>    
+                        </div>
+                        <div class="main-category-box-itembox">
+                            <div class="main-category-box-itembox-itemimg" style="background-image: url(./asset/image/category7.png);"></div>
+                            <div class="main-category-box-itembox-itemtext">Giày Dép Nam</div>    
+                        </div>
+                        <div class="main-category-box-itembox">
+                            <div class="main-category-box-itembox-itemimg" style="background-image: url(./asset/image/category8.png);"></div>
+                            <div class="main-category-box-itembox-itemtext">Thiết Bị Gia Dụng</div>    
+                        </div>
+                        <div class="main-category-box-itembox">
+                            <div class="main-category-box-itembox-itemimg" style="background-image: url(./asset/image/category9.png);"></div>
+                            <div class="main-category-box-itembox-itemtext">Thể Thao & Du Lịch</div>    
+                        </div>
+                        <div class="main-category-box-itembox">
+                            <div class="main-category-box-itembox-itemimg" style="background-image: url(./asset/image/category10.png);"></div>
+                            <div class="main-category-box-itembox-itemtext">Ô Tô & Xe Máy & Xe Đạp</div>    
+                        </div>
+                        <div class="main-category-box-itembox">
+                            <div class="main-category-box-itembox-itemimg" style="background-image: url(./asset/image/category11.png);"></div>
+                            <div class="main-category-box-itembox-itemtext">Balo & Túi Ví Nam</div>    
+                        </div>
+                        <div class="main-category-box-itembox">
+                            <div class="main-category-box-itembox-itemimg" style="background-image: url(./asset/image/category12.png);"></div>
+                            <div class="main-category-box-itembox-itemtext">Đồ Chơi</div>    
+                        </div>
+                        <div class="main-category-box-itembox">
+                            <div class="main-category-box-itembox-itemimg" style="background-image: url(./asset/image/category13.png);"></div>
+                            <div class="main-category-box-itembox-itemtext">Chăm Sóc Thú Cưng</div>    
+                        </div>
+                    </div>
+                    <div class="main-category-box">
+                        <div class="main-category-box-itembox">
+                            <div class="main-category-box-itembox-itemimg" style="background-image: url(./asset/image/category1.png);"></div>
+                            <div class="main-category-box-itembox-itemtext">Thời Trang Nam</div>    
+                        </div>
+                        <div class="main-category-box-itembox">
+                            <div class="main-category-box-itembox-itemimg" style="background-image: url(./asset/image/category2.png);"></div>
+                            <div class="main-category-box-itembox-itemtext">Điện Thoại & Phụ Kiện</div>    
+                        </div>
+                        <div class="main-category-box-itembox">
+                            <div class="main-category-box-itembox-itemimg" style="background-image: url(./asset/image/category3.png);"></div>
+                            <div class="main-category-box-itembox-itemtext">Thiết Bị Điện Tử</div>    
+                        </div>
+                        <div class="main-category-box-itembox">
+                            <div class="main-category-box-itembox-itemimg" style="background-image: url(./asset/image/category4.png);"></div>
+                            <div class="main-category-box-itembox-itemtext">Máy Tính & Laptop</div>    
+                        </div>
+                        <div class="main-category-box-itembox">
+                            <div class="main-category-box-itembox-itemimg" style="background-image: url(./asset/image/category5.png);"></div>
+                            <div class="main-category-box-itembox-itemtext">Máy Ảnh & Máy Quay Phim</div>    
+                        </div>
+                        <div class="main-category-box-itembox">
+                            <div class="main-category-box-itembox-itemimg" style="background-image: url(./asset/image/category6.png);"></div>
+                            <div class="main-category-box-itembox-itemtext">Đồng Hồ</div>    
+                        </div>
+                        <div class="main-category-box-itembox">
+                            <div class="main-category-box-itembox-itemimg" style="background-image: url(./asset/image/category7.png);"></div>
+                            <div class="main-category-box-itembox-itemtext">Giày Dép Nam</div>    
+                        </div>
+                        <div class="main-category-box-itembox">
+                            <div class="main-category-box-itembox-itemimg" style="background-image: url(./asset/image/category8.png);"></div>
+                            <div class="main-category-box-itembox-itemtext">Thiết Bị Gia Dụng</div>    
+                        </div>
+                        <div class="main-category-box-itembox">
+                            <div class="main-category-box-itembox-itemimg" style="background-image: url(./asset/image/category9.png);"></div>
+                            <div class="main-category-box-itembox-itemtext">Thể Thao & Du Lịch</div>    
+                        </div>
+                        <div class="main-category-box-itembox">
+                            <div class="main-category-box-itembox-itemimg" style="background-image: url(./asset/image/category10.png);"></div>
+                            <div class="main-category-box-itembox-itemtext">Ô Tô & Xe Máy & Xe Đạp</div>    
+                        </div>
+                        <div class="main-category-box-itembox">
+                            <div class="main-category-box-itembox-itemimg" style="background-image: url(./asset/image/category11.png);"></div>
+                            <div class="main-category-box-itembox-itemtext">Balo & Túi Ví Nam</div>    
+                        </div>
+                        <div class="main-category-box-itembox">
+                            <div class="main-category-box-itembox-itemimg" style="background-image: url(./asset/image/category12.png);"></div>
+                            <div class="main-category-box-itembox-itemtext">Đồ Chơi</div>    
+                        </div>
+                        <div class="main-category-box-itembox">
+                            <div class="main-category-box-itembox-itemimg" style="background-image: url(./asset/image/category13.png);"></div>
+                            <div class="main-category-box-itembox-itemtext">Chăm Sóc Thú Cưng</div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="main-bannermall">
+                    <div class="main-eventday9__1"></div>
+                    <div class="main-eventday9__2"></div>
+                    <div class="main-eventday9__3"></div>
+                </div>
+                <div class="main-shopmall">
+                    <div class="main-shopmall-header">
+                        <div class="main-shopmall-header__title">
+                            <h3>SHOPEE MALL</h3>
+                            <P>
+                                <i class="fas fa-undo"></i>
+                                7 Ngày Miễn Phí Trả Hàng
+                            </P>
+                            <P>
+                                <i class="far fa-check-square"></i>
+                                Hàng Chính Hãng 100%
+                            </P>
+                            <P>
+                                <i class="fas fa-truck"></i>
+                                Miễn Phí Vận Chuyển
+                            </P>
+                        </div>
+                        <div class="main-shopmall-header__other">
+                            <a href="#">
+                                Xem tất cả
+                                <i class="fas fa-chevron-circle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="main-shopmall-body">
+                        <div class="main-shopmall-body-slide">
+                            <input type="radio" name="slide-shopmall" id="main-shopmall1">
+                            <input type="radio" name="slide-shopmall" id="main-shopmall2">
+                            <input type="radio" name="slide-shopmall" id="main-shopmall3">
+                            <input type="radio" name="slide-shopmall" id="main-shopmall4">
+                            <input type="radio" name="slide-shopmall" id="main-shopmall5">
+                            <div class="marual">
+                                <label for="main-shopmall1" class="marual-btn"></label>
+                                <label for="main-shopmall2" class="marual-btn"></label>
+                                <label for="main-shopmall3" class="marual-btn"></label>
+                                <label for="main-shopmall4" class="marual-btn"></label>
+                                <label for="main-shopmall5" class="marual-btn"></label>
+                            </div>
+                            <div class="main-shopmall-body-slide-box">
+                                <img src="./asset/image/main-shopmall1.png" alt="">
+                                <img src="./asset/image/main-shopmall2.png" alt="">
+                                <img src="./asset/image/main-shopmall3.png" alt="">
+                                <img src="./asset/image/main-shopmall4.png" alt="">
+                                <img src="./asset/image/main-shopmall5.png" alt="">
+                            </div>
+                        </div>
+                        <div class="main-shopmall-body-product">
+                            <input type="radio" name="product" id="product1">
+                            <input type="radio" name="product" id="product2">
+                            <div class="boxproduct">
+                                <label for="product1" class="product1"><</label>
+                                <label for="product2" class="product2">></label>
+                            </div>
+                            <label for=""></label>
+                            <div class="main-shopmall-body-product-box">
+                                <div class="main-shopmall-body-product-box__sp" style="background-image: url(./asset/image/main-shopmall-product1.png);">
+                                    <p>Mát lạnh dài lâu</p>
+                                </div>
+                                <div class="main-shopmall-body-product-box__sp" style="background-image: url(./asset/image/main-shopmall-product1.png);">
+                                    <p>Mát lạnh dài lâu</p>
+                                </div>
+                                <div class="main-shopmall-body-product-box__sp" style="background-image: url(./asset/image/main-shopmall-product1.png);">
+                                    <p>Mát lạnh dài lâu</p>
+                                </div>
+                                <div class="main-shopmall-body-product-box__sp" style="background-image: url(./asset/image/main-shopmall-product1.png);">
+                                    <p>Mát lạnh dài lâu</p>
+                                </div>
+                                <div class="main-shopmall-body-product-box__sp" style="background-image: url(./asset/image/main-shopmall-product1.png);">
+                                    <p>Mát lạnh dài lâu</p>
+                                </div>
+                                <div class="main-shopmall-body-product-box__sp" style="background-image: url(./asset/image/main-shopmall-product1.png);">
+                                    <p>Mát lạnh dài lâu</p>
+                                </div>
+                                <div class="main-shopmall-body-product-box__sp" style="background-image: url(./asset/image/main-shopmall-product1.png);">
+                                    <p>Mát lạnh dài lâu</p>
+                                </div>
+                                <div class="main-shopmall-body-product-box__sp" style="background-image: url(./asset/image/main-shopmall-product1.png);">
+                                    <p>Mát lạnh dài lâu</p>
+                                </div>
+                            </div>
+                            <div class="main-shopmall-body-product-box">
+                                <div class="main-shopmall-body-product-box__sp" style="background-image: url(./asset/image/main-shopmall-product1.png);">
+                                    <p>Mát lạnh dài lâu</p>
+                                </div>
+                                <div class="main-shopmall-body-product-box__sp" style="background-image: url(./asset/image/main-shopmall-product1.png);">
+                                    <p>Mát lạnh dài lâu</p>
+                                </div>
+                                <div class="main-shopmall-body-product-box__sp" style="background-image: url(./asset/image/main-shopmall-product1.png);">
+                                    <p>Mát lạnh dài lâu</p>
+                                </div>
+                                <div class="main-shopmall-body-product-box__sp" style="background-image: url(./asset/image/main-shopmall-product1.png);">
+                                    <p>Mát lạnh dài lâu</p>
+                                </div>
+                                <div class="main-shopmall-body-product-box__sp" style="background-image: url(./asset/image/main-shopmall-product1.png);">
+                                    <p>Mát lạnh dài lâu</p>
+                                </div>
+                                <div class="main-shopmall-body-product-box__sp" style="background-image: url(./asset/image/main-shopmall-product1.png);">
+                                    <p>Mát lạnh dài lâu</p>
+                                </div>
+                                <div class="main-shopmall-body-product-box__sp" style="background-image: url(./asset/image/main-shopmall-product1.png);">
+                                    <p>Mát lạnh dài lâu</p>
+                                </div>
+                                <div class="main-shopmall-body-product-box__sp" style="background-image: url(./asset/image/main-shopmall-product1.png);">
+                                    <p>Mát lạnh dài lâu</p>
+                                </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="main-bannermall">
+                    <div class="main-bannermall-img1"></div>
+                    <div class="main-bannermall-img2"></div>
+                    <div class="main-bannermall-img3"></div>
+                </div>
+                <div class="main-suggest">
+                    <div class="main-suggest-header">
+                        <div class="main-suggest-header-title">GỢI Ý HÔM NAY</div>
+                        <div class="main-suggest-header-box"><img src="./asset/image/main-suggest-header.png" alt=""></div>
+                    </div>
+                    <div class="main-suggest-body">
+                        <div class="main-national-box-product-body main-suggest-body-productbox">
+                            <div class="main-national-box-product-body-bsp main-suggest-body-product">
+                                <div class="main-national-box-product-body-bsp__km">
+                                    <p>45%</p>
+                                    <p>GIẢM</p>
+                                </div>
+                                <img class="main-national-box-product-body-bsp__img" src="./asset/image/nation-product1.png" alt="">
+                                <div class="main-national-box-product-body-bsp__price">₫3.000</div>
+                            </div>
+                            <div class="main-national-box-product-body-bsp main-suggest-body-product">
+                                <div class="main-national-box-product-body-bsp__km">
+                                    <p>45%</p>
+                                    <p>GIẢM</p>
+                                </div>
+                                <img class="main-national-box-product-body-bsp__img" src="./asset/image/nation-product2.png" alt="">
+                                <div class="main-national-box-product-body-bsp__price">₫3.000</div>
+                            </div>
+                            <div class="main-national-box-product-body-bsp main-suggest-body-product">
+                                <div class="main-national-box-product-body-bsp__km">
+                                    <p>45%</p>
+                                    <p>GIẢM</p>
+                                </div>
+                                <img class="main-national-box-product-body-bsp__img" src="./asset/image/nation-product3.png" alt="">
+                                <div class="main-national-box-product-body-bsp__price">₫3.000</div>    
+                            </div>
+                            <div class="main-national-box-product-body-bsp main-suggest-body-product">
+                                <div class="main-national-box-product-body-bsp__km">
+                                    <p>45%</p>
+                                    <p>GIẢM</p>
+                                </div>
+                                <img class="main-national-box-product-body-bsp__img" src="./asset/image/nation-product1.png" alt="">
+                                <div class="main-national-box-product-body-bsp__price">₫3.000</div>
+                            </div>
+                            <div class="main-national-box-product-body-bsp main-suggest-body-product">
+                                <div class="main-national-box-product-body-bsp__km">
+                                    <p>45%</p>
+                                    <p>GIẢM</p>
+                                </div>
+                                <img class="main-national-box-product-body-bsp__img" src="./asset/image/nation-product2.png" alt="">
+                                <div class="main-national-box-product-body-bsp__price">₫3.000</div>
+                            </div>
+                            <div class="main-national-box-product-body-bsp main-suggest-body-product">
+                                <div class="main-national-box-product-body-bsp__km">
+                                    <p>45%</p>
+                                    <p>GIẢM</p>
+                                </div>
+                                <img class="main-national-box-product-body-bsp__img" src="./asset/image/nation-product3.png" alt="">
+                                <div class="main-national-box-product-body-bsp__price">₫3.000</div>
+                            </div>
+                            <div class="main-national-box-product-body-bsp main-suggest-body-product">
+                                <div class="main-national-box-product-body-bsp__km">
+                                    <p>45%</p>
+                                    <p>GIẢM</p>
+                                </div>
+                                <img class="main-national-box-product-body-bsp__img" src="./asset/image/nation-product3.png" alt="">
+                                <div class="main-national-box-product-body-bsp__price">₫3.000</div>
+                            </div>
+                            <div class="main-national-box-product-body-bsp main-suggest-body-product">
+                                <div class="main-national-box-product-body-bsp__km">
+                                    <p>45%</p>
+                                    <p>GIẢM</p>
+                                </div>
+                                <img class="main-national-box-product-body-bsp__img" src="./asset/image/nation-product3.png" alt="">
+                                <div class="main-national-box-product-body-bsp__price">₫3.000</div>
+                            </div>
+                            <div class="main-national-box-product-body-bsp main-suggest-body-product">
+                                <div class="main-national-box-product-body-bsp__km">
+                                    <p>45%</p>
+                                    <p>GIẢM</p>
+                                </div>
+                                <img class="main-national-box-product-body-bsp__img" src="./asset/image/nation-product3.png" alt="">
+                                <div class="main-national-box-product-body-bsp__price">₫3.000</div>
+                            </div>
+                            <div class="main-national-box-product-body-bsp main-suggest-body-product">
+                                <div class="main-national-box-product-body-bsp__km">
+                                    <p>45%</p>
+                                    <p>GIẢM</p>
+                                </div>
+                                <img class="main-national-box-product-body-bsp__img" src="./asset/image/nation-product3.png" alt="">
+                                <div class="main-national-box-product-body-bsp__price">₫3.000</div>
+                            </div>
+                            <div class="main-national-box-product-body-bsp main-suggest-body-product">
+                                <div class="main-national-box-product-body-bsp__km">
+                                    <p>45%</p>
+                                    <p>GIẢM</p>
+                                </div>
+                                <img class="main-national-box-product-body-bsp__img" src="./asset/image/nation-product3.png" alt="">
+                                <div class="main-national-box-product-body-bsp__price">₫3.000</div>
+                            </div>
+                            <div class="main-national-box-product-body-bsp main-suggest-body-product">
+                                <div class="main-national-box-product-body-bsp__km">
+                                    <p>45%</p>
+                                    <p>GIẢM</p>
+                                </div>
+                                <img class="main-national-box-product-body-bsp__img" src="./asset/image/nation-product3.png" alt="">
+                                <div class="main-national-box-product-body-bsp__price">₫3.000</div>
+                            </div>
+                            <div class="main-national-box-product-body-bsp main-suggest-body-product">
+                                <div class="main-national-box-product-body-bsp__km">
+                                    <p>45%</p>
+                                    <p>GIẢM</p>
+                                </div>
+                                <img class="main-national-box-product-body-bsp__img" src="./asset/image/nation-product3.png" alt="">
+                                <div class="main-national-box-product-body-bsp__price">₫3.000</div>
+                            </div>
+                            <div class="main-national-box-product-body-bsp main-suggest-body-product">
+                                <div class="main-national-box-product-body-bsp__km">
+                                    <p>45%</p>
+                                    <p>GIẢM</p>
+                                </div>
+                                <img class="main-national-box-product-body-bsp__img" src="./asset/image/nation-product3.png" alt="">
+                                <div class="main-national-box-product-body-bsp__price">₫3.000</div>
+                            </div>
+                            <div class="main-national-box-product-body-bsp main-suggest-body-product">
+                                <div class="main-national-box-product-body-bsp__km">
+                                    <p>45%</p>
+                                    <p>GIẢM</p>
+                                </div>
+                                <img class="main-national-box-product-body-bsp__img" src="./asset/image/nation-product3.png" alt="">
+                                <div class="main-national-box-product-body-bsp__price">₫3.000</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-other">Xem Thêm</div>
+            </div>    
+        </div>
+        <div class="event"><a href=""><img src="./asset/image/event.png" alt=""></a></div>
+        <div class="footer">
+            <div class="grid">
+                <div class="footer-text">
+                    <h1>SHOPEE - GÌ CŨNG CÓ, MUA HẾT Ở SHOPEE</h1>
+                    <p>Shopee - ứng dụng mua sắm trực tuyến thú vị, tin cậy, an toàn và miễn phí! Shopee là nền tảng giao dịch trực tuyến hàng đầu ở Đông Nam Á, Việt Nam, Singapore, Malaysia, Indonesia, Thái Lan, Philipin, Đài loan và Brazil. Với sự đảm bảo của Shopee, bạn sẽ mua hàng trực tuyến an tâm và nhanh chóng hơn bao giờ hết!</p>
+                    <h1>MUA SẮM VÀ BÁN HÀNG ONLINE ĐƠN GIẢN, NHANH CHÓNG VÀ AN TOÀN</h1>
+                    <p>Nếu bạn đang tìm kiếm một trang web để mua và bán hàng trực tuyến thì Shopee.vn là một sự lựa chọn tuyệt vời dành cho bạn. Bản chất của Shopee là một social E-commerce platform - nền tảng trang web thương mại điện tử tích hợp mạng xã hội. Điều này cho phép người mua và người bán hàng dễ dàng tương tác, trao đổi thông tin về sản phẩm và chương trình khuyến mãi của shop. Nhờ nền tảng đó, việc mua bán trên Shopee trở nên nhanh chóng và đơn giản hơn. Bạn có thể trò chuyện trực tiếp với nhà bán hàng để hỏi trực tiếp về mặt hàng cần mua. Còn nếu bạn muốn tìm mua những dòng sản phẩm chính hãng, uy tín, Shopee Mall chính là sự lựa chọn lí tưởng dành cho bạn. Đến với Shopee, cơ hội để trở thành một nhà bán hàng dễ dàng hơn bao giờ hết. Chỉ với vài thao tác trên ứng dụng, bạn đã có thể đăng bán ngay những sản phẩm của mình. Không những thế, các nhà bán hàng có thể tùy chọn các tính năng “Shop tạm nghỉ” hoặc tự tạo chương trình khuyến mãi trên Shopee để thu hút người mua với những sản phẩm có mức giá hấp dẫn. Khi đăng nhập tại Shopee Kênh người bán, bạn có thể dễ dàng phân loại sản phẩm, theo dõi đơn hàng, chăm sóc khách hàng và cập nhập ngay các hoạt động của shop.</p>
+                    <h1>TẢI ỨNG DỤNG SHOPEE NGAY ĐỂ MUA BÁN ONLINE MỌI LÚC, MỌI NƠI</h1>
+                    <p>Ưu điểm của ứng dụng Shopee là cho phép bạn mua và bán hàng mọi lúc, mọi nơi. Bạn có thể tải ứng dụng Shopee cũng như đăng sản phẩm bán hàng một cách nhanh chóng và tiện lợi. Ngoài ra, ứng dụng Shopee còn có những ưu điểm sau: - Giao diện thân thiện, đơn giản, dễ sử dụng. Bạn sẽ dễ dàng thấy được ngay những sản phẩm nổi bật cũng như dễ dàng tìm đến các ô tìm kiếm, giỏ hàng hoặc tính năng chat liền tay. - Ứng dụng tích hợp công nghệ quản lý đơn mua và bán hàng tiện lợi trên cùng một tài khoản. Bạn sẽ vừa là người mua hàng, vừa là người bán hàng rất linh hoạt, dễ dàng. - Cập nhập thông tin khuyến mãi, Shopee flash sale nhanh chóng và liên tục. Tại Shopee, bạn có thể lấy các mã giảm giá Shopee và mã miễn phí vận chuyển toàn quốc. Bên cạnh đó, Shopee cũng sẽ có những chiến dịch khuyến mãi lớn hằng năm như Siêu hội mua sắm 4.4, Shopee 9.9 sale, Shopee 10.10 sale, Shopee 11.11 sale, Shopee 12.12 sale, Shopee Tết Sale. Đây là thời điểm để người mua hàng có thể nhanh tay chọn ngay cho mình những mặt hàng ưa thích với mức giá giảm kỉ lục.</p>
+                    <h1>MUA HÀNG HIỆU CAO CẤP GIÁ TỐT TẠI SHOPEE</h1>
+                    <p>Bên cạnh Shopee Premium, Shopee còn có rất nhiều khuyến mãi khủng cho hàng hiệu giảm đến 50%. Cộng với mã giao hàng miễn phí, Shopee cũng có các mã giảm giá được phân phối mỗi tháng từ rất nhiều gian hàng chính hãng tham gia chương trình khuyến mãi này. Bên cạnh đó, Shopee còn tập hợp rất nhiều thương hiệu đình đám được các nhà bán lẻ uy tín phân phối bán trên Shopee, đem đến cho bạn sự lựa chọn đa dạng, từ các hãng mỹ phẩm nổi tiếng hàng đầu như Kiehl's, Fresh, The Ordinary, Foreo, Transino, SK-II... Đến những thương hiệu công nghệ nổi tiếng như camera hành trình Gopro, loa Marshall, bảng vẽ điện tử Huion, máy quay DJI Osmo Pocket, loa Harman Kardon, Razer... </p>
+                    <h1>MUA HÀNG CHÍNH HÃNG TỪ CÁC THƯƠNG HIỆU LỚN VỚI SHOPEE</h1>
+                    <p>Mua hàng trên Shopee luôn là một trải nghiệm ấn tượng. Dù bạn đang có nhu cầu mua bất kỳ mặt hàng thời trang nam, thời trang nữ, đồng hồ, điện thoại, nước rửa tay khô hay khẩu trang N95 thì Shopee cũng sẽ đảm bảo cung cấp cho bạn những sản phẩm ưng ý. Bên cạnh đó, Shopee cũng có sự tham gia của các thương hiệu hàng đầu thế giới ở đa dạng nhiều lĩnh vực khác nhau. Trong đó có thể kể đến Samsung, OPPO, Xiaomi, Innisfree, Unilever, P&G, Biti’s,...Các thương hiệu này hiện cũng đã có cửa hàng chính thức trên Shopee Mall với hàng trăm mặt hàng chính hãng, được cập nhập liên tục. Là một kênh bán hàng uy tín, Shopee luôn cam kết mang lại cho khách hàng những trải nghiệm mua sắm online giá rẻ, an toàn và tin cậy. Mọi thông tin về người bán và người mua đều được bảo mật tuyệt đối. Các hoạt động giao dịch thanh toán tại Shopee luôn được đảm bảo diễn ra nhanh chóng, an toàn. Một vấn đề nữa khiến cho các khách hàng luôn quan tâm đó chính là mua hàng trên Shopee có đảm bảo không. Shopee luôn cam kết mọi sản phẩm trên Shopee, đặc biệt là Shopee Mall đều là những sản phẩm chính hãng, đầy đủ tem nhãn, bảo hành từ nhà bán hàng. Ngoài ra, Shopee bảo vệ người mua và người bán bằng cách giữ số tiền giao dịch đến khi người mua xác nhận đồng ý với đơn hàng và không có yêu cầu khiếu nại, trả hàng hay hoàn tiền nào. Thanh toán sau đó sẽ được chuyển đến cho người bán. Đến với Shopee ngay hôm nay để mua hàng online giá rẻ và trải nghiệm dịch vụ chăm sóc khách hàng tuyệt vời tại đây. Đặc biệt khi mua sắm trên Shopee Mall, bạn sẽ được miễn phí vận chuyển, giao hàng tận nơi và 7 ngày miễn phí trả hàng. Ngoài ra, khách hàng có thể sử dụng Shopee Xu để đổi lấy mã giảm giá có giá trị cao và voucher dịch vụ hấp dẫn. Tiếp đến là Shopee Mum's Club, Shopee Beauty Club và Shopee Book Club với các ưu đãi độc quyền từ các thương hiệu lớn có những khách hàng đã đăng ký làm thành viên. Hãy truy cập ngay Shopee.vn hoặc tải ngay ứng dụng Shopee về điện thoại ngay hôm nay!</p>
+                </div>
+                <div class="footer-info">
+                    <div class="footer-info-box">
+                        <h3>Chăm sóc khách hàng</h3>
+                        <p>Trung Tâm Trợ giúp</p>
+                        <p>Shopee Blog</p>
+                        <p>Shopee Mall</p>
+                        <p>Hướng Dẫn Mua Hàng</p>
+                        <p>Thanh Toán</p>
+                        <p>Hướng Dẫn Bán Hàng</p>
+                        <p>Shopee Xu</p>
+                        <p>Vận chuyển</p>
+                        <p>Trả Hàng & Hoàn Tiền</p>
+                        <p>Chăm Sóc Khách Hàng</p>
+                        <p>Chính Sách Bảo Hành</p>
+                    </div>
+                    <div class="footer-info-box">
+                        <h3>Về Shopee</h3>
+                        <P>Giới Thiệu Về Shopee Việt Nam</P>
+                        <P>Tuyển Dụng</P>
+                        <P>Điều Khoản Shopee</P>
+                        <P>Chính Sách Bảo Mật</P>
+                        <P>Chính Hãng</P>
+                        <P>Kênh Người Bán</P>
+                        <P>Flash Sales</P>
+                        <P>Chương Trình Tiếp Thị Liên Kết Shopee</P>
+                        <P>Liên Hệ Truyền Thông</P>
+                    </div>
+                    <div class="footer-info-box">
+                        <h3>Thanh Toán</h3>
+                    </div>
+                    <div class="footer-info-box">
+                        <h3>Theo dõi chúng tôi</h3>
+                        <a href="">
+                            <i class="fab fa-facebook"></i>
+                            Facebook</a>
+                        <a href="">
+                            <i class="fab fa-instagram"></i>
+                            Instagram</a>
+                        <a href="">
+                            <i class="fab fa-linkedin"></i>
+                            Linkedln</a>
+                    </div>
+                    <div class="footer-info-box">
+                        <h3>Tải ứng dụng Shopee ngay thôi</h3>
+                        <img style="width: 35%; height: 100px; float: left;" src="./asset/image/QRcode.png" alt="">
+                        <img style="width: 35%; height: 25px; padding-left:10px; margin-bottom: 5px;" src="./asset/image/appstore.png" alt="">
+                        <img style="width: 35%; height: 25px; padding-left:10px; margin-bottom: 5px;" src="./asset/image/chplay.png" alt="">
+                        <img style="width: 35%; height: 25px; padding-left:10px; margin-bottom: 5px;" src="./asset/image/appge.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-nation">
+                    <div class="footer-nation-1">© 2021 Shopee. Tất cả các quyền được bảo lưu</div>
+                    <div class="footer-nation-1">Quốc gia & Khu vực:
+                        Singapore |
+                        Indonesia |
+                        Đài Loan |
+                        Thái Lan |
+                        Malaysia |
+                        Việt Nam |
+                        Philippines |
+                        Brazil |
+                        México |
+                        Colombia |
+                        Chile</div>
+                </div>
+                <div class="footer-end">
+                    <span>CHÍNH SÁCH BẢO MẬT</span>
+                    <span>|</span>
+                    <span>QUY CHẾ HOẠT ĐỘNG</span>
+                    <span>|</span>
+                    <span>CHÍNH SÁCH VẬN CHUYỂN</span>
+                    <span>|</span>
+                    <span>CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN</span><br>
+                    <img src="./asset/image/footer-end.PNG" alt=""><br>
+                    <p>Địa chỉ: Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường Liễu Giai, Phường Ngọc Khánh, Quận Ba Đình, Thành phố Hà Nội, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.shopee.vn</p>
+                    <p>Chịu Trách Nhiệm Quản Lý Nội Dung: Nguyễn Đức Trí - Điện thoại liên hệ: 024 73081221 (ext 4678)</p>
+                    <p>Mã số doanh nghiệp: 0106773786 do Sở Kế hoạch & Đầu tư TP Hà Nội cấp lần đầu ngày 10/02/2015</p>
+                    <p>© 2015 - Bản quyền thuộc về Công ty TNHH Shopee</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- modal -->
+        <!-- form đăng nhập -->
+        <div class="modal js-modal__login">
+            <div class="modal-overlay"></div>
+            <div class="modal-overlay-nav">
+                <div class="grid modal-nav">
+                    <img class="modal-nav__logo" src="./asset/image/logo.png" alt="">
+                    <div class="modal-nav__title">Đăng nhập</div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body__bg"></div>
+                <div class="modal-body__content">
+                    <div class="modal-body__content-header">
+                        Đăng nhập
+                        <button class="modal-body__content-header-returnbtn hoveropacity js-return-btn">Trở lại</button>
+                    </div>
+                    <div class="modal-body__content-main">
+                        <form action="">
+                            <input type="text" placeholder="Email/Số điện thoại/Tên đăng nhập" class="modal-body__content-main-input">
+                            <input type="text" placeholder="Mật khẩu" class="modal-body__content-main-input">
+                            <button type="submit" class="modal-body__content-main-submit hoveropacity">Đăng nhập</button>
+                        </form>
+                        <div class="modal-body__content-main-signother">
+                            <p class="modal-body__content-main-signother-text hoveropacity"><a href="">Quên mật khẩu</a></p>
+                            <p class="modal-body__content-main-signother-text hoveropacity"><a href="">Đăng nhập bằng SMS</a></p>
+                        </div>
+                        <div class="modal-body__content-main-other">
+                            <div class="modal-body__content-main-other-g"></div>
+                            <div class="modal-body__content-main-other-t">Hoặc</div>
+                            <div class="modal-body__content-main-other-g"></div>
+                        </div>
+                        <div class="modal-body__content-main-signwith">
+                            <div class="modal-body__content-main-signwith__store hoveropacity">
+                                <a href="">
+                                    <i class="fab fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </div>
+                            <div class="modal-body__content-main-signwith__store hoveropacity">
+                                <a href="">
+                                    <i class="fab fa-google"></i>
+                                    Google
+                                </a>
+                            </div>
+                            <div class="modal-body__content-main-signwith__store hoveropacity">
+                               <a href="">
+                                    <i class="fab fa-apple"></i>
+                                    Apple
+                               </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-body__content-footer">
+                        <div class="modal-body__content-footer-text">
+                            Bạn mới biết đến Shopee? <a href="" class="modal-body__content-footer-text-dk hoveropacity">Đăng kí</a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <!-- form đăng kí -->
+        <div class="modal js-modal__register">
+            <div class="modal-overlay"></div>
+            <div class="modal-overlay-nav">
+                <div class="grid modal-nav">
+                    <img class="modal-nav__logo" src="./asset/image/logo.png" alt="">
+                    <div class="modal-nav__title">Đăng ký</div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body__bg"></div>
+                <div class="modal-body__content">
+                    <div class="modal-body__content-header">
+                        Đăng ký
+                        <button class="modal-body__content-header-returnbtn js-return-btn">Trở lại</button>
+                    </div>
+                    <div class="modal-body__content-main">
+                        <form action="">
+                            <input type="text" placeholder="Số điện thoại" class="modal-body__content-main-input">
+                            <button type="submit" class="modal-body__content-main-submit hoveropacity">TIẾP THEO</button>
+                        </form>
+                        <div class="modal-body__content-main-other">
+                            <div class="modal-body__content-main-other-g"></div>
+                            <div class="modal-body__content-main-other-t">Hoặc</div>
+                            <div class="modal-body__content-main-other-g"></div>
+                        </div>
+                        <div class="modal-body__content-main-signwith">
+                            <div class="modal-body__content-main-signwith__store hoveropacity">
+                                <a href="">
+                                    <i class="fab fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </div>
+                            <div class="modal-body__content-main-signwith__store hoveropacity">
+                                <a href="">
+                                    <i class="fab fa-google"></i>
+                                    Google
+                                </a>
+                            </div>
+                            <div class="modal-body__content-main-signwith__store hoveropacity">
+                               <a href="">
+                                    <i class="fab fa-apple"></i>
+                                    Apple
+                               </a>
+                            </div>
+                        </div>
+                        <div class="modal-body__content-main-signother-dk">
+                            <p class="modal-body__content-main-signother-text-dk hoveropacity">Bằng việc đăng kí, bạn đã đồng ý với Shopee về<br><a href="">Điều khoản dịch vụ</a> & <a href="">Chính sách bảo mật</a></p>
+                        </div>
+                    </div>
+                    <div class="modal-body__content-footer">
+                        <div class="modal-body__content-footer-text">
+                            Bạn đã có tài khoản? <a href="" class="modal-body__content-footer-text-dk hoveropacity">Đăng nhập</a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <script>
+        var login = document.querySelector('.js-login')
+        var register = document.querySelector('.js-register')
+        var modalLogin = document.querySelector('.js-modal__login')
+        var modalRegister = document.querySelector('.js-modal__register')
+        var returnBtns = document.querySelectorAll('.js-return-btn')
+
+        login.addEventListener('click' , function(event){
+            modalLogin.classList.add('open')
+        })
+        register.addEventListener('click' , function(event){
+            modalRegister.classList.add('open')
+        })
+        for ( const returnBtn of returnBtns){
+            returnBtn.addEventListener('click', function(event){
+                modalLogin.classList.remove('open')
+                modalRegister.classList.remove('open')
+            })
+                
+            
+        }
+
+
+    </script>
+</body>
+</html>
